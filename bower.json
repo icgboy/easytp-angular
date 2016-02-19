@@ -1,0 +1,11 @@
+{
+  "name": "easytp-angular",
+  "private": "true",
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "jquery-easyui": "jquery.easyui#*",
+    "jquery.notify": "*",
+    "font-awesome": "~4.5.0",
+    "bootstrap": "^3.3.6"
+  }
+}

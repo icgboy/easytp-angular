@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<title>easytp-angular</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="bower_components/jquery-easyui/themes/bootstrap/easyui.css">
+	<link rel="stylesheet" href="bower_components/jquery.notify/css/jquery.notify.css">
+
+	<script src="node_modules/es6-shim/es6-shim.min.js"></script>
+	<script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+	<script src="node_modules/systemjs/dist/system.js"></script>
+	<script src="node_modules/typescript/lib/typescript.js"></script>
+	<script src="node_modules/angular2/bundles/angular2-polyfills.min.js"></script>
+	<script src="node_modules/rxjs/bundles/Rx.min.js"></script>
+	<script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+	<script src="node_modules/angular2/bundles/router.dev.js"></script>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/jquery-easyui/jquery.easyui.min.js"></script>
+	<script src="bower_components/jquery-easyui/locale/easyui-lang-zh_CN.js"></script>
+	<script src="bower_components/jquery.notify/js/jquery.notify.min.js"></script>
+	<script>
+		System.config({
+			transpiler: 'typescript',
+			typescriptOptions: {emitDecoratorMetadata: true},
+			packages: {
+				app: {
+					defaultExtension: 'ts'
+				}
+			}
+		});
+		System.import('app/start').then(null, console.error.bind(console));
+	</script>
+
+	<base href="./">
+</head>
+
+<body>
+	<app>加载中...</app>
+</body>
+
+</html>
